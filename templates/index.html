@@ -6,15 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="The River template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
-<link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap-4.1.2/bootstrap.min.css')}}">
+<link href="{{ url_for('static',filename='plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='plugins/OwlCarousel2-2.3.4/owl.carousel.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='plugins/OwlCarousel2-2.3.4/owl.theme.default.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='plugins/OwlCarousel2-2.3.4/animate.css')}}">
+<link href="{{ url_for('static',filename='plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css')}}">
+<link href="{{ url_for('static',filename='plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main_styles.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/responsive.css')}}">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
 				</nav>
 				<div class="book_button"><a href="booking.html">Book Online</a></div>
 				<div class="header_phone d-flex flex-row align-items-center justify-content-center">
-					<img src="images/phone.png" alt="">
+					<img src="{{ url_for('static',filename='images/phone.png')}}" alt="">
 					<span>0183-12345678</span>
 				</div>
 
@@ -65,7 +65,7 @@
 		<div class="menu_extra">
 			<div class="menu_book text-right"><a href="#">Book online</a></div>
 			<div class="menu_phone d-flex flex-row align-items-center justify-content-center">
-				<img src="images/phone-2.png" alt="">
+				<img src="{{ url_for('static',filename='images/phone-2.png')}}" alt="">
 				<span>0183-12345678</span>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-					<div class="background_image" style="background-image:url(images/index_1.jpg)"></div>
+					<div class="background_image" style="background-image:url{{ url_for('static',filename='images/index_1.jpg')}}"></div>
 					<div class="home_container">
 						<div class="container">
 							<div class="row">
@@ -108,7 +108,7 @@
 
 				<!-- Slide -->
 				<div class="slide">
-					<div class="background_image" style="background-image:url(images/index_1.jpg)"></div>
+					<div class="background_image" style="background-image:url{{ url_for('static',filename='images/index_1.jpg')}}"></div>
 					<div class="home_container">
 						<div class="container">
 							<div class="row">
@@ -189,7 +189,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="icon_box_icon"><img src="images/icon_1.svg" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_icon"><img src="{{ url_for('static',filename='images/icon_1.svg')}}" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
 						<div class="icon_box_title"><h2>Fabulous Resort</h2></div>
 						<div class="icon_box_text">
 							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
@@ -200,7 +200,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="icon_box_icon"><img src="images/icon_2.svg" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_icon"><img src="{{ url_for('static',filename='images/icon_2.svg')}}" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
 						<div class="icon_box_title"><h2>Infinity Pool</h2></div>
 						<div class="icon_box_text">
 							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
@@ -211,7 +211,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="icon_box_icon"><img src="images/icon_3.svg" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_icon"><img src="{{ url_for('static',filename='images/icon_3.svg')}}" class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
 						<div class="icon_box_title"><h2>Luxury Rooms</h2></div>
 						<div class="icon_box_text">
 							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
@@ -231,20 +231,20 @@
 				
 				<!-- Slide -->
 				<div class="gallery_item">
-					<div class="background_image" style="background-image:url(images/gallery_1.jpg)"></div>
-					<a class="colorbox" href="images/gallery_1.jpg"></a>
+					<div class="background_image" style="background-image:url({{ url_for('static',filename='images/gallery_1.jpg')}}"></div>
+					<a class="colorbox" href="{{ url_for('static',filename='images/gallery_1.jpg')}}"></a>
 				</div>
 
 				<!-- Slide -->
 				<div class="gallery_item">
 					<div class="background_image" style="background-image:url(images/gallery_2.jpg)"></div>
-					<a class="colorbox" href="images/gallery_2.jpg"></a>
+					<a class="colorbox" href="{{ url_for('static',filename='images/gallery_2.jpg')}}"></a>
 				</div>
 
 				<!-- Slide -->
 				<div class="gallery_item">
 					<div class="background_image" style="background-image:url(images/gallery_3.jpg)"></div>
-					<a class="colorbox" href="images/gallery_3.jpg"></a>
+					<a class="colorbox" href="{{ url_for('static',filename='images/gallery_3.jpg')}}></a>
 				</div>
 
 				<!-- Slide -->
